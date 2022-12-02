@@ -20,25 +20,25 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Developing
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
+                  <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/CSS" target="_blank">CSS</a></li>
+                  <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">JAVASCRIPT</a></li>
+                  <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/Framework" target="_blank">FRAMEWORK</a></li>  
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                   Editors
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="https://code.visualstudio.com/" target="_blank">VISUAL STUDIO CODE</a></li>
+                  <li><a class="dropdown-item" href="https://www.typescriptlang.org/" target="_blank">TYPESCRIPT</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -49,6 +49,114 @@
         </div>
       </nav>
     <!--Navba-->
+
+    <!--Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/img/html.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/img/css.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/img/js.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Carousel-->
+
+    <section id="videos" class="py-5">
+      <h2 class="text-center display-4">Videos</h2>
+      <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                  <div class="card borde-secondary">
+                      <div class="card-header">
+                        <h4>HTML</h4>
+                      </div>
+                      <div class="card-body">
+                        <p>Hypertext Markup Language (HTML) is the code used to structure 
+                          and display a web page and its content. For example, your content 
+                          could be paragraphs, a bulleted list, or images and data tables.</p>
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/10GHKjgQIR0" 
+                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                          clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen></iframe>
+                      </div>
+                    </div>
+              </div>
+              <!--*****-->
+              <div class="col-md-3">
+                  <div class="card borde-secondary">
+                      <div class="card-header">
+                        <h4>CSS</h4>
+                      </div>
+                      <div class="card-body">
+                        <p>CSS stands for Cascading Style Sheets. Basically, it is a language that manages the 
+                          design and presentation of web pages, that is, how they look when a user visits them. 
+                          It works together with</p>
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/8cSo0ijtkzU" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                      </div>
+                    </div>
+              </div>
+              <!--*****-->
+              <div class="col-md-3">
+                  <div class="card borde-secondary">
+                      <div class="card-header">
+                        <h4>JAVASCRIPT</h4>
+                      </div>
+                      <div class="card-body">
+                        <p>JavaScript is the programming language that you should use to add interactive 
+                          features to your website, (for example, games, events that occur when buttons 
+                          are pressed or data is entered into forms</p>
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/riZbwRFMFuw" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                      </div>
+                    </div>
+              </div>
+              <!--*****-->
+              <div class="col-md-3">
+                  <div class="card borde-secondary">
+                      <div class="card-header">
+                        <h4>FRAMEWORK</h4>
+                      </div>
+                      <div class="card-body">
+                        <p>A framework is a scheme or framework that offers a basic structure to develop a 
+                          project with specific objectives, a kind of template that serves as a starting 
+                          point for the organization and development</p>
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/_-TKjgEsukM" 
+                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                          clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen></iframe>
+                      </div>
+                    </div>
+              </div>
+              <!--*****-->
+            </div>
+      </div>
+  </section>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
